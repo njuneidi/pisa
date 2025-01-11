@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساحة الغابات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .table-section {
+            flex: 3;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f57c00;
+            color: white;
+        }
+        .table-header {
+            background-color: #29b6f6;
+            color: white;
+        }
+        .table-header th {
+            background-color: #29b6f6;
+        }
+        .info-section {
+            flex: 2;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info-section h2 {
+            color: #f57c00;
+            margin-top: 0;
+        }
+        .instructions {
+            border: 1px dashed #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .dropdown {
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>مساحة الغابات</h1>
+    <div class="container">
+        <!-- Table Section -->
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr class="table-header">
+                        <th>الدولة</th>
+                        <th>٢٠٠٠</th>
+                        <th>٢٠١٠</th>
+                        <th>٢٠١٥</th>
+                        <th>العمود ج</th>
+                        <th>العمود هـ</th>
+                        <th>العمود و</th>
+                        <th>العمود ز</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ألمانيا</td>
+                        <td>٣١٫٢٢</td>
+                        <td>٣٢٫٤٤</td>
+                        <td>٣٢٫٧٧</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>البرازيل</td>
+                        <td>٥٤٫٣٢</td>
+                        <td>٥٥٫٤٥</td>
+                        <td>٥٤٫١٢</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <h2>مساحة الغابات - تدريب</h2>
+            <p>سنقوم الآن بالتدرب على استخدام جدول البيانات قبل الانتقال للأسئلة.</p>
+            <div class="instructions">
+                <p>استخدم جدول البيانات لاستكمال الإجراءات الثلاثة الآتية:</p>
+                <ul>
+                    <li>ترتيب البيانات في عمود:
+                        <br>انقر على رمز <strong>⇅</strong> في العمود ب أو ج لترتيب البيانات في ذلك العمود تصاعديًا (من أدنى إلى أعلى).
+                    </li>
+                    <li>لا تنسَ عند ترتيب البيانات في جميع الأعمدة بناءً على طريقة ترتيبها في أي عمود من الأعمدة.</li>
+                </ul>
+                <select class="dropdown">
+                    <option>اختر عمود</option>
+                    <option>عمود ب</option>
+                    <option>عمود ج</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
